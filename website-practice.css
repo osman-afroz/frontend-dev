@@ -1,0 +1,314 @@
+header,
+nav,
+footer {
+  display: block;
+}
+body {
+  line-height: 1;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  margin: auto;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.row::after {
+  display: table;
+  clear: both;
+  content: " ";
+}
+article p {
+  font-size: 35px;
+  padding: 15px;
+}
+
+label {
+  font-size: 38px;
+  font-weight: 700;
+}
+p {
+  font-size: 30px;
+  line-height: 1.2;
+}
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* header h1 {
+  float: center;
+  text-align: center;
+  color: red;
+  background: grey;
+}
+header {
+  background-color: grey;
+} */
+nav {
+  width: 100%;
+  margin: 0;
+}
+nav ul {
+  background-color: #eee;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+ul.topnav li {
+  list-style: none;
+  /*this wont add bullet points for ul*/
+  float: left;
+}
+ul.topnav li.topnav-right {
+  float: right;
+}
+/*ul.topnav li a {
+  display: block;
+  /* text decoration removes the anchor link below text line*/
+/* text-decoration: none; */
+/*when browser shrinking we need min-height*/
+/* min-height: 16px;
+  text-align: center;
+  padding: 14px;
+  text-transform: uppercase;
+  color: #666;
+}  */
+
+ul.topnav li a {
+  list-style-type: none;
+  background-color: #eee;
+  text-decoration: none;
+  color: grey;
+  padding: 14px;
+  margin: 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  min-height: 16px;
+  text-align: center;
+  display: block;
+}
+/* ul.topnav li a {
+  text-decoration: none;
+  margin: 0;
+} */
+
+ul.topnav li a:hover {
+  background-color: rgb(45, 45, 201);
+  color: white;
+}
+ul.topnav li.dropdownIcon {
+  display: none;
+}
+
+/* ##########  custom style ############## */
+
+#section-1-gradient {
+  background: blue;
+  background: -webkit-linear-gradient(#0606b1, #72729e);
+  background: -o-linear-gradient(#0606b1, #727294);
+  background: -moz-linear-gradient(#0606b1, #c3c3cf);
+  background: linear-gradient(#0c0cf3, #7d7df3);
+}
+h1.section2header {
+  font-size: 54px;
+  text-align: center;
+}
+div.box {
+  margin: 24px;
+  padding: 36px 24px 40px 24px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+.icon img {
+  width: 110px;
+  height: 110px;
+}
+.imagesize img {
+  width: 500px;
+  height: 250px;
+}
+div.imagesize {
+  display: block;
+  margin: auto;
+  box-shadow: -2px -2px 25px 2px rgba(0, 0, 0, 0.15),
+    2px 2px 10px 2px rgba(0, 0, 0, 1);
+}
+div.icon {
+  width: 100%;
+}
+button {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  padding: 15px 60px;
+  margin: 5px;
+  display: block;
+  border-radius: 7px;
+  color: #fff;
+  background-color: #0069ff;
+}
+button.learnmore {
+  display: block;
+  margin: auto;
+}
+div.leftSide-col {
+  margin-left: 30%;
+}
+div.rightSide-col {
+  margin-left: 20%;
+}
+
+h1.large {
+  color: #eee;
+  font-size: 60px;
+  margin: 0;
+  line-height: 70px;
+}
+form h2 {
+  color: #eee;
+}
+input[type="text"] {
+  font-size: 20px;
+  width: 400px;
+  min-width: 100px;
+  padding: 5px;
+  border-radius: 9px;
+}
+footer{
+  background-color:#666;
+  padding-left:10%;
+}
+footer h1{
+  color:white;
+  font-size:35px;
+
+}
+
+footer.footsy ul{
+  list-style: none;
+  font-size:22px;
+  padding:0;
+  line-height:1.5;
+  }
+  footer.footsy ul li{
+    color: white;
+  }
+
+/* ##############    Mobile     ############### */
+
+@media screen and (max-width: 680px) {
+  ul.topnav li:not(:nth-child(1)) {
+    display: none;
+  }
+  ul.topnav li.dropdownIcon {
+    display: block;
+    float: right;
+  }
+  /* @media screen and (max-width: 680px) { */
+  /* ul.topnav li:not(:nth-child(1)) {
+    display: block;
+  }
+  ul.topnav li.dropdownIcon {
+    display: block;
+    float: right;
+  } */
+
+  ul.topnav.responsive li.dropdownIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  ul.topnav.responsive {
+    position: relative;
+  }
+  ul.topnav.responsive li {
+    display: inline;
+    float: none;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  .col-6,
+  .col-4,
+  .col-7,
+  .col-5 {
+    width: 100%;
+    margin: 0;
+  }
+  
+  article p {
+    font-size: 25px;
+    margin: 10px;
+  }
+  div.imagesize img {
+    width:100%;
+  }
+  div.imagesize{
+    margin:10px;
+  }
+  div.leftSide-col,
+  div.rightSide-col {
+    margin: 15px;
+  }
+  input[type="text"] {
+    width: 350px;
+  }
+  div.videoContainer iframe {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+  div.box {
+    display: block;
+    padding: 5px;
+  }
+  div.mobileStack{
+      width:50%; 
+    display:block;
+  }
+}
